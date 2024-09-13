@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sound store</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/DigitalListe.css" />
+  </head>
+  <body>
+    <div id="topLayer">
+      <header>Sound store</header>
+
+      <div id="uIconShoppingCart">
+        <img
+          id="shoppingCart"
+          src="src/Other/cart-shopping-solid.svg"
+          alt="shopping cart"
+        />
+      </div>
+
+      <div id="uIconUser">
+        <i class="fas fa-user-circle"></i>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="jobCardsContainer">
+        <div id="sortingBox">
+          <button id="sort">
+            Sort
+            <span class="arrowSort"></span>
+          </button>
+          <button id="filter">
+            Filter
+            <span class="arrowSort"></span>
+          </button>
+          <ul id="listFilter">
+            <li id="showAll">Show all</li>
+            <li id="headphones">Headphones</li>
+            <li id="earbuds">Earbuds</li>
+            <li id="bluetoothSpeakers">Bluetooth speakers</li>
+            <!-- <li id="available">Available</li>
+            <li id="taken">Taken</li>
+            <li id="createdByMe">Created by me</li> -->
+          </ul>
+          <ul id="listSort">
+            <li id="title">Name</li>
+            <li id="priceLH">Price low-high</li>
+            <li id="priceHL">Price high-low</li>
+            <!-- <li id="jobDate">Job date</li> -->
+          </ul>
+        </div>
+        <div id="listContainer">
+          <ul class="hovedListe">
+            <!-- <li>
+              <div class="listItemTemplate">
+                <div class="listGridLeft">
+                  <div class="mobilNavn">Apple AirPods Pro</div>
+                  <div class="mobilPris">4 500,-</div>
+                </div>
+                <div class="listGridMiddle">
+                  <div class="mobilInfo">
+                    Trådløs, Støydemping, Uten ladekabel, 2019
+                  </div>
+                  <div class="mobilDato">sist oppdatert: 26.10.21</div>
+                </div>
+                <div class="listGridRight">
+                  <div class="mobilBilde">
+                    <img
+                      src="src/logoApple.png"
+                      alt="apple logo"
+                      class="logoApple"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/930e3b5467.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

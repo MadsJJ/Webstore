@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Mulish:wght@300;400;500;600&family=Permanent+Marker&family=Satisfy&display=swap");
+
+:root {
+  --hovedFarge: #5f9ea0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Mulish", Helvetica, Arial, sans-serif;
+}
+
+.fa-home {
+  font-size: 2.5rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}

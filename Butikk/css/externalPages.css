@@ -1,0 +1,68 @@
+body {
+  display: grid;
+  grid-template-rows: 100%;
+  background-color: #fffdfd;
+}
+
+#container {
+  place-self: center;
+  background-color: var(--hovedFarge);
+  border-radius: 1rem;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1vh;
+  justify-items: center;
+}
+
+header {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
+  font-weight: 600;
+}
+
+input {
+  width: 20vw;
+  height: 3vh;
+  /* height: 3rem; */
+  font-size: large;
+  margin: 1rem;
+  align-self: center;
+  border-radius: 0.1rem;
+  border: none;
+}
+
+button {
+  box-shadow: inset 0 -0.6rem 1rem -0.35rem rgba(0, 0, 0, 0.17),
+    inset 0 0.6rem 2rem -0.3rem rgba(255, 255, 255, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12),
+    0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.74),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.69);
+  border-radius: 0.2rem;
+  background-color: #a7754d;
+  border: none;
+  color: #ffffff;
+  width: 12vw;
+  height: 6vh;
+  cursor: pointer;
+  /* opacity: 0.95; */
+  font-size: 1.3rem;
+  margin: 1rem;
+  align-self: flex-end;
+}
+
+button:active {
+  box-shadow: inset 0 -0.6rem 1rem -0.35rem rgba(0, 0, 0, 0.17),
+    inset 0 0.6rem 2rem -0.3rem rgba(255, 255, 255, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12),
+    0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.74),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.69),
+    inset 0 0.6rem 2rem -0.3rem rgba(0, 0, 0, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12);
+}

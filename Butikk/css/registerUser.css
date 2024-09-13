@@ -1,0 +1,8 @@
+#container {
+  height: 75%;
+  width: 45%;
+}
+
+#gridContainer {
+  grid-template-rows: repeat(6, 1fr) 2fr;
+}

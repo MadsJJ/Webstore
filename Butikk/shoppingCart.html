@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/externalPages.css" />
+    <link rel="stylesheet" href="css/shoppingCart.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        Shopping Cart
+        <a href="index.html"><i class="fas fa-home"></i> </a>
+      </header>
+      <div id="gridContainer">
+        <ul class="hovedListe"></ul>
+      </div>
+      <div id="bottomContainer">
+        <div id="total">TOTAL</div>
+        <div id="totalSum"></div>
+      </div>
+      <div id="buyContainer">
+        <button id="emptySC">Empty Shopping Cart</button>
+        <button id="purchase">Purchase ></button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/930e3b5467.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+    <script src="js/shoppingCart.js"></script>
+  </body>
+</html>
+
+<!-- TODO: 
+redigere produkter (antall) 
+se total og enkeltvis kostnad
+SKAL være en kjøpknapp/bestilling/levering
+handlevognen skal lagres
+husk også hover for å vise mer info (lorem ipsum)
+sjekk hva som skjer med shoppingcart når jeg endrer den via index (to faner oppe på en gang)-->

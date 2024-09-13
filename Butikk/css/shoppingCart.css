@@ -1,0 +1,235 @@
+#container {
+  width: 60%;
+  height: 92%;
+  display: grid;
+  grid-template-rows: 8fr 60% 10fr 6fr;
+  overflow: hidden;
+}
+
+header {
+  margin-bottom: 2vh;
+}
+
+button {
+  height: 6vh;
+  width: 12vw;
+  justify-self: center;
+  align-self: flex-start;
+}
+
+#buttonContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2vh;
+  justify-items: center;
+}
+
+#gridContainer {
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 0.7fr 1fr;
+  margin-top: 1vh;
+  row-gap: 2.5vh;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+}
+
+.text {
+  color: #fff;
+  justify-self: end;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.hovedListe {
+  list-style: none;
+  padding: 0 0;
+  overflow-y: scroll;
+  max-height: 76.2vh;
+  place-self: center;
+  height: 100%;
+  width: 100%;
+}
+
+.listItemTemplate {
+  /* height: 11vh; */
+  height: 13vh;
+  /* border-radius: 0.9rem;
+  border: 0.05rem solid black; */
+  margin-bottom: 0.2vh;
+  /* box-shadow: 0.047rem 0.047rem 0.25rem -0.063rem; */
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr 2fr;
+  grid-template-rows: 100%;
+  /* overflow: auto; */
+  grid-column-gap: 1vw;
+  grid-template-areas: "lGL lGM lGPC lGR";
+}
+
+.listGridRight {
+  grid-area: lGR;
+  display: grid;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr; */
+}
+
+.listGridMiddle {
+  grid-area: lGM;
+  display: grid;
+  place-self: center;
+}
+
+.listGridLeft {
+  grid-area: lGL;
+  align-content: center;
+}
+
+.listGridProductCount {
+  grid-area: lGPC;
+  display: grid;
+  place-items: center;
+}
+
+.changeCountGrid {
+  display: grid;
+  place-self: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-areas: "- n +"; */
+}
+
+.minus {
+  /* grid-area: "-"; */
+  place-self: center;
+  background-color: rgba(65, 71, 74, 0.5);
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0 0.35rem;
+  height: 92%;
+  display: grid;
+  place-content: center;
+}
+
+.number {
+  grid-area: "n";
+  place-self: center;
+  font-size: 1.2rem;
+}
+
+.plus {
+  /* grid-area: "+"; */
+  place-self: center;
+  background-color: rgba(65, 71, 74, 0.5);
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: grid;
+  place-content: center;
+  padding: 0 0.35rem;
+  /* margin: 0.5rem 0; */
+  height: 92%;
+}
+
+.mobilNavn {
+  justify-self: center;
+  align-self: end;
+  font-size: 1.5rem;
+  /* font-weight: 200; */
+  padding: 0 0rem 0rem 0.3rem;
+  grid-area: mN;
+}
+
+.mobilPris {
+  place-self: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  /* grid-area: mP; */
+}
+
+.mobilBilde {
+  border-radius: 1rem;
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  grid-template-rows: 100%;
+  height: 100%;
+  padding-left: 2rem;
+}
+
+.logoTest {
+  height: 100%;
+}
+
+.logoApple {
+  height: 100%;
+}
+
+.logoJabra {
+  height: 35%;
+}
+
+.logoSony {
+  height: 30%;
+}
+
+.logoSamsung {
+  height: 135%;
+}
+
+.logoOneplus {
+  height: 60%;
+}
+
+.logoGoogle {
+  height: 80%;
+}
+
+.logoHuawei {
+  height: 80%;
+}
+
+.hovedListe li:nth-child(odd) {
+  background-color: rgba(63, 66, 89, 0.11);
+}
+
+li:nth-child(even) {
+  background-color: rgba(63, 66, 89, 0.005);
+}
+
+.hovedListe li {
+  border-radius: 0.9rem;
+}
+
+#bottomContainer {
+  background-color: rgba(63, 66, 89, 0.11);
+  margin: 0rem 1rem 1rem 1rem;
+  padding: 2rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#totalSum {
+  justify-self: end;
+}
+
+#buyContainer {
+  display: grid;
+  /* justify-content: right; */
+  width: 98%;
+  grid-template-columns: 4fr 1fr;
+
+}
+
+#purchase, #emptySC {
+  margin: 0 1rem ;
+}
+
+#emptySC {
+  justify-self: flex-start;
+}

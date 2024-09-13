@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/registerUser.css" />
+    <link rel="stylesheet" href="css/externalPages.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <a href="login.html"><i class="fas fa-solid fa-arrow-left"></i></a>
+        New Account
+      </header>
+      <div id="gridContainer">
+        <input type="text" placeholder="Firstname" id="firstName" />
+        <input type="text" placeholder="Lastname" id="lastName" />
+        <input type="text" placeholder="Email" id="email" />
+
+        <input type="password" placeholder="Password" id="password" />
+
+        <button id="button">Submit</button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/930e3b5467.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script src="js/registerUser.js"></script>
+  </body>
+</html>

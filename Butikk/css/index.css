@@ -1,0 +1,395 @@
+#topLayer {
+  background-color: var(--hovedFarge);
+  border-bottom: rgb(90, 78, 78) 1px solid;
+  height: 15vh;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 8fr 8fr 2fr 2fr;
+  column-gap: 2rem;
+  grid-template-areas: "Wd Head uIcon";
+  box-shadow: 0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.34),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.19);
+  z-index: 10000;
+}
+
+#welcomeDiv {
+  grid-area: Wd;
+  color: #ffffff;
+  justify-self: center;
+  align-self: center;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header {
+  grid-area: Head;
+  /* justify-self: ; */
+  align-self: center;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#uIconUser {
+  grid-area: uIcon;
+  justify-self: end;
+  align-self: center;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  display: grid;
+}
+
+#uIconLogin {
+  grid-area: uIcon;
+  display: grid;
+  justify-self: end;
+  align-self: center;
+  align-items: center;
+  cursor: pointer;
+  height: 7vh;
+  font-weight: 600;
+}
+
+.fa-user-circle {
+  font-size: 4rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#uIconShoppingCart {
+  display: grid;
+  align-items: center;
+}
+
+#shoppingCart {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg)
+    brightness(106%) contrast(102%);
+  cursor: pointer;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+#logInDiv {
+  color: #ffffff;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 1.4rem;
+}
+
+#container {
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "jCC 0 jDC";
+}
+
+#sortingBox {
+  width: 100%;
+  height: 3vh;
+  margin: 2vh 0 2vh;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 1fr repeat(2, 3fr) 1fr;
+  grid-template-areas: "0 f s";
+  justify-items: center;
+}
+
+#takeJobContainer {
+  width: 100%;
+  height: 3vh;
+  margin: 1vh 0 3vh;
+  display: grid;
+  grid-template-rows: 100%;
+  justify-items: center;
+}
+
+#filter {
+  grid-area: f;
+}
+
+#sort {
+  grid-area: s;
+}
+
+#sort,
+#filter,
+#takeJob {
+  width: 8vw;
+  height: 4vh;
+  padding-left: 1vw;
+  text-align: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--hovedFarge);
+  border-radius: 0.2rem;
+  box-shadow: inset 0 -0.6rem 1rem -0.35rem rgba(0, 0, 0, 0.17),
+    inset 0 0.6rem 2rem -0.3rem rgba(255, 255, 255, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12),
+    0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.74),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.69);
+  border: none;
+  color: #ffffff;
+}
+
+#takeJob {
+  height: 4.5vh;
+  width: 15vw;
+}
+
+#sort:active,
+#filter:active,
+#takeJob:active {
+  box-shadow: inset 0 -0.6rem 1rem -0.35rem rgba(0, 0, 0, 0.17),
+    inset 0 0.6rem 2rem -0.3rem rgba(255, 255, 255, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12),
+    0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.74),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.69),
+    inset 0 0.6rem 2rem -0.3rem rgba(0, 0, 0, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12);
+}
+
+#sort:hover,
+#filter:hover,
+#takeJob:hover {
+  opacity: 0.95;
+}
+
+.arrowSort {
+  border: solid black;
+  border-width: 0 0.128rem 0.128rem 0;
+  display: inline-block;
+  padding: 0.2rem;
+  margin-left: 0.45rem;
+  margin-bottom: 0.2rem;
+  transform: rotate(45deg);
+}
+
+#listSort,
+#listFilter {
+  list-style: none;
+  position: absolute;
+  top: 23vh;
+  border: 0.063rem solid cadetblue;
+  padding: 0.6rem;
+  margin: 0;
+  width: 8vw;
+  background-color: #ffffff;
+  display: none;
+  z-index: 100;
+}
+
+#listFilter {
+  right: 59.5vw;
+  height: 27.5vh;
+}
+
+#listSort {
+  right: 33vw;
+  height: 19vh;
+}
+
+#listSort li,
+#listFilter li {
+  cursor: pointer;
+  padding: 1rem 0;
+  border-bottom: 0.063rem solid rgba(95, 158, 160, 0.5);
+}
+
+#listSort li:last-child,
+#listFilter li:last-child {
+  border: 0;
+}
+
+#listSort li:hover,
+#listFilter li:hover {
+  color: cadetblue;
+}
+
+#jobCardsContainer {
+  /* margin-right: 42vw; */
+  grid-area: jCC;
+}
+
+#listContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#listContainer > li {
+  list-style-type: none;
+}
+
+/* .listItemTemplate {
+  width: 100%;
+  height: 30vh;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  background-color: #f6f7fa;
+  overflow: hidden;
+  margin-bottom: 2vh;
+} */
+
+.taken {
+  border: 0.1rem solid red;
+  width: 100%;
+  height: 30vh;
+  border-radius: 1rem;
+  /* margin-top: 2vh; */
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  /* grid-template-columns: 10fr 1fr; */
+  background-color: #f6f7fa;
+  overflow: hidden;
+  border-radius: 0.9rem;
+  box-shadow: 0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.19);
+  margin-bottom: 2vh;
+  cursor: pointer;
+}
+
+.takenBP {
+  border: none;
+  border-bottom: red 1px solid;
+}
+/* 
+.lITHeader {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+.lITInfo {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-rows: repeat(3, 0.27fr);
+  grid-template-columns: 0.1fr 1fr;
+  column-gap: 1vw;
+}
+
+.lITMoney,
+.lITEmployerAndDate,
+.lITEmployerEmail,
+.lITStartDate {
+  font-weight: 500;
+  justify-self: start;
+}
+
+.lITEmployerAndDate {
+  margin-bottom: 1vh;
+  margin-right: 1vw;
+  justify-self: end;
+  align-self: flex-end;
+  opacity: 50%;
+}
+
+li .listItemTemplate {
+  cursor: pointer;
+}
+
+li .listItemTemplate,
+#jobDescriptionContainer {
+  border-radius: 0.9rem;
+  border: 0.05rem solid rgb(61, 53, 53);
+  box-shadow: 0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.19);
+} */
+
+#jobDescriptionContainer .listItemTemplate {
+  border-bottom: black 1px solid;
+  box-shadow: 0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.19);
+}
+
+.imgStyle {
+  /* width: 95%; */
+  display: grid;
+  grid-template-rows: 100%;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 2vh;
+  /* border: 0.05rem solid rgb(61, 53, 53); */
+}
+
+/* .imgTest {
+  background-color: chartreuse;
+  height: 80%;
+  width: 80%;
+} */
+
+#selectedJobContainer {
+  width: auto;
+  position: sticky;
+  top: 1vh;
+  height: 97vh;
+  border-radius: 1rem;
+  display: inline-block;
+  grid-area: jDC;
+}
+
+#jobDescriptionContainer {
+  height: 90vh;
+}
+
+#jobDescriptionContainerTaken {
+  border: 0.092rem solid red;
+  border-radius: 0.9rem;
+  box-shadow: 0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.19);
+}
+
+#jobDescriptionWrapper {
+  height: 58vh;
+  display: grid;
+  grid-template-rows: 30% 60%;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.jobDescription {
+  padding: 0rem 1.5rem;
+  overflow: hidden;
+}
+
+/* img {
+  width: 95%;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  border: 0.1rem solid rgb(61, 53, 53);
+} */
+
+.buyButton {
+  box-shadow: inset 0 -0.6rem 1rem -0.35rem rgba(0, 0, 0, 0.17),
+    inset 0 0.6rem 2rem -0.3rem rgba(255, 255, 255, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12),
+    0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.74),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.69);
+  border-radius: 0.2rem;
+  background-color: #a7754d;
+  /* background-color: #5f9ea0; */
+  opacity: 0.75;
+  border: none;
+  color: #ffffff;
+  /* width: 9vw; */
+  /* height: 4vh; */
+  width: 83%;
+  height: 30%;
+  cursor: pointer;
+  /* opacity: 0.95; */
+  /* font-size: 1.3rem; */
+  font-size: 87%;
+  margin: 1rem;
+  /* align-self: flex-end; */
+}
+
+.buyButton:active {
+  box-shadow: inset 0 -0.6rem 1rem -0.35rem rgba(0, 0, 0, 0.17),
+    inset 0 0.6rem 2rem -0.3rem rgba(255, 255, 255, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12),
+    0.047rem 0.047rem 0.25rem -0.063rem rgba(0, 0, 0, 0.74),
+    0.047rem 0.17rem 0.25rem -0.063rem rgba(0, 0, 0, 0.69),
+    inset 0 0.6rem 2rem -0.3rem rgba(0, 0, 0, 0.15),
+    inset 0 0 0rem 0.05rem rgba(255, 255, 255, 0.12);
+}

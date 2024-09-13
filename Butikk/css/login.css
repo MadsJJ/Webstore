@@ -1,0 +1,27 @@
+a:visited {
+  color: #0000ee;
+}
+
+#signInLink {
+  font-size: 1.2rem;
+}
+
+a:active,
+a:visited:active {
+  color: #ff0000;
+}
+
+#container {
+  height: 55%;
+  width: 40%;
+}
+
+#gridContainer {
+  grid-template-rows: repeat(2, 1fr) 2fr 1fr;
+}
+
+/* #uIconHome {
+  border-radius: 50%;
+  height: 1vh;
+  width: 1vw;
+} */

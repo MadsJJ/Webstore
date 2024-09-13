@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/externalPages.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/userProfile.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        User Profile
+        <a href="index.html"><i class="fas fa-home"></i> </a>
+      </header>
+      <div id="gridContainer">
+        <div class="text" id="firstNameText">Firstname:</div>
+        <div id="firstname"></div>
+        <div class="text" id="lastNameText">Lastname:</div>
+        <div id="lastname"></div>
+        <div class="text" id="emailText">Email:</div>
+        <div id="email"></div>
+      </div>
+      <div id="buttonContainer">
+        <!-- <a href="changeUserInfo.html">
+          <button id="saveChanges">Change userinfo</button></a
+        >
+        <a href="createJob.html">
+          <button id="createJob">Create job offer</button>
+        </a>
+        <a href="yourJobs.html">
+          <button id="myJobs">My Jobs</button>
+        </a> -->
+        <button id="logOut">Log out</button>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/930e3b5467.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+
+    <script src="js/userProfile.js"></script>
+  </body>
+</html>

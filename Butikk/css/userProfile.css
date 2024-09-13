@@ -1,0 +1,37 @@
+#container {
+  width: 60%;
+  height: 70%;
+}
+
+button {
+  height: 4vh;
+  width: 15vw;
+  justify-self: center;
+}
+
+#buttonContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2vh;
+  justify-items: center;
+}
+
+#gridContainer {
+  grid-template-columns: 0.7fr 1fr;
+  margin-top: 1vh;
+  justify-items: start;
+  column-gap: 2vw;
+  row-gap: 2.5vh;
+  color: #fff;
+  font-size: 1.2rem;
+  display: grid;
+  align-items: center;
+}
+
+.text {
+  color: #fff;
+  justify-self: end;
+  align-self: center;
+  font-size: 1.5rem;
+}
